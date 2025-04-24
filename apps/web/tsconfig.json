@@ -1,0 +1,20 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // add api express types or build will fail because req.jwt is not  typed
+    "typeRoots": ["../api/src/@types"]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    "next.config.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

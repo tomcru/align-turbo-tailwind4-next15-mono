@@ -1,0 +1,81 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "files": {
+    "include": [
+      "apps/**/*.js",
+      "apps/**/*.jsx",
+      "apps/**/*.ts",
+      "apps/**/*.tsx",
+      "packages/**/*.js",
+      "packages/**/*.jsx",
+      "packages/**/*.ts",
+      "packages/**/*.tsx"
+    ],
+    "ignore": [".next", "dist", ".webpack"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "attributePosition": "auto"
+  },
+  "organizeImports": { "enabled": false },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "noSvgWithoutTitle": "off",
+        "useIframeTitle": "off"
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off",
+        "noForEach": "off",
+        "noBannedTypes": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off",
+        "noUnusedImports": "error",
+        "noPrecisionLoss": "off"
+      },
+      "performance": {
+        "noDelete": "off",
+        "noAccumulatingSpread": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useBlockStatements": "error",
+        "useEnumInitializers": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noConfusingVoidType": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "lineWidth": 80,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    }
+  }
+}
