@@ -6,8 +6,6 @@
         "name": "next"
       }
     ],
-    // add api express types or build will fail because req.jwt is not  typed
-    "typeRoots": ["../api/src/@types"]
   },
   "include": [
     "**/*.ts",
